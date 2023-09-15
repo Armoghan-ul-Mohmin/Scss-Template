@@ -1,0 +1,28 @@
+// For margine and padding
+@mixin list-loop($className, $styleName) {
+    $i: 0;
+    @while $i <= $max {
+        #{$className + $i} {
+            #{$styleName}: #{$i + $unit};
+        }
+        $i: $i + $offset;
+    }
+}
+
+// For Text-size
+@mixin Text-size($size-map) {
+    @each $size-name, $size-properties in $size-map {
+        .text-#{$size-name} {
+            @each $property, $value in $size-properties {
+                #{$property}: $value;
+            }
+        }
+    }
+}
+
+// Define a mixin to apply styles based on display size
+@mixin responsive-display($size) {
+    @media screen and (min-width: map-get($display-sizes, $size)) {
+        @content;
+    }
+}

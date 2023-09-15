@@ -1,0 +1,18 @@
+@import "../abstracts";
+@import "../themes/";
+
+:root {
+    @each $color, $shade in $colors {
+        @each $prop, $value in $shade {
+            --#{$color}-#{$prop}: #{$value};
+        }
+    }
+}
+
+.dark {
+    @each $darkcolor, $darkshade in $darkcolors {
+        @each $prop, $value in $darkshade {
+            --#{$darkcolor}-#{$prop}: #{$value};
+        }
+    }
+}

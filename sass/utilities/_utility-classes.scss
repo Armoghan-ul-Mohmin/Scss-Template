@@ -1,0 +1,12 @@
+@import "../abstracts";
+
+@include Text-size($text);
+
+.center {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "scss-boilerplate",
+  "version": "1.0.0",
+  "description": "Scss boilerplate code with folder structure",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass sass/style.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Armoghan-ul-Mohmin/Scss-Template.git"
+  },
+  "author": "Armoghan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Armoghan-ul-Mohmin/Scss-Template/issues"
+  },
+  "homepage": "https://github.com/Armoghan-ul-Mohmin/Scss-Template#readme",
+  "devDependencies": {
+    "sass": "^1.67.0"
+  }
+}

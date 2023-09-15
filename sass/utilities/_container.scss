@@ -1,0 +1,63 @@
+.containet {
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+
+    @include responsive-display(small) {
+        width: 75%;
+        padding: 0 auto;
+        margin: 16px;
+    }
+
+    @include responsive-display(medium) {
+        width: 85%;
+        padding: 0 auto;
+        margin: 16px;
+    }
+
+    @include responsive-display(large) {
+        width: calc(100% - 2rem);
+        padding: 0 auto;
+        margin: 16px;
+    }
+}
+
+.container-center {
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive-display(small) {
+        margin: 5px;
+        padding: 0 auto;
+    }
+
+    @include responsive-display(medium) {
+        margin: 10px;
+        margin-right: 2px;
+        padding: 0 10px;
+    }
+
+    @include responsive-display(large) {
+        margin: 16px;
+        padding: 0 16px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+
+    @include responsive-display(small) {
+        width: calc(100% - 2rem);
+    }
+
+    @include responsive-display(medium) {
+        width: calc(100% - 2rem);
+    }
+
+    @include responsive-display(large) {
+        width: calc(100% - 2rem);
+    }
+}
